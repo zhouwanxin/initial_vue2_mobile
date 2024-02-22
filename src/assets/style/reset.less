@@ -1,0 +1,151 @@
+body,
+html {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+a,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	box-sizing: border-box;
+	position: relative;
+}
+
+input,
+button,
+textarea,
+select {
+	outline: 0;
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+em,
+i {
+	font-weight: 100;
+	font-style: normal;
+}
+
+ul,
+ol,
+li {
+	list-style-type: none;
+}
+
+textarea {
+	resize: none !important;
+}
+
+/* 修改滚动条 */
+*::-webkit-scrollbar {
+	/*滚动条整体样式*/
+	width: 1px;
+	height: 5px;
+	/*高宽分别对应横竖滚动条的尺寸*/
+	// background: #f00;
+	box-shadow: inset 1px 0 1px rgba(0, 0, 0, 0.2);
+}
+
+*::-webkit-scrollbar-thumb {
+	/*滚动条里面小方块*/
+	border-radius: 3px;
+	background: #aaa;
+	height: 120px;
+}
+
+*::-webkit-scrollbar-track {
+	/*滚动条里面轨道*/
+	box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+	border-radius: 2px;
+	background: #fff;
+}
+
+/*ie浏览器隐藏滚动条*/
+* {
+	-ms-scroll-chaining: chained;
+	-ms-overflow-style: none;
+	-ms-content-zooming: zoom;
+	-ms-scroll-rails: none;
+	-ms-content-zoom-limit-min: 100%;
+	-ms-content-zoom-limit-max: 500%;
+	scroll-snap-type: proximity;
+	-ms-scroll-snap-points-x: snapList(100%, 200%, 300%, 400%, 500%);
+	-ms-overflow-style: none;
+}
