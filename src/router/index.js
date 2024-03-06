@@ -48,6 +48,16 @@ const routes = [
       },
       component: () =>
         import( /* webpackChunkName: "my" */ "@/views/my.vue"),
+    }, {
+      path: "/detail",
+      name: "detail",
+      meta: {
+        title: "详情",
+        navBar: true,
+        backBtn: true
+      },
+      component: () =>
+        import( /* webpackChunkName: "detail" */ "@/views/detail.vue"),
     }],
   },
 ];

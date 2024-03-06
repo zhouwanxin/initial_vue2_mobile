@@ -7,7 +7,10 @@
     ]"
   >
     <navBar v-if="withNavBar" :navBarConfig="navBarConfig"></navBar>
-    <router-view />
+    <keep-alive>
+      <router-view v-if="$route.meta.keepAlive"></router-view>
+    </keep-alive>
+    <router-view v-if="!$route.meta.keepAlive"></router-view>
     <tabBar v-if="withTabBar"></tabBar>
   </div>
 </template>
