@@ -13,7 +13,8 @@ module.exports = defineConfig({
   // 项目静态文件打包输出目录
   assetsDir: "static",
   // 是否在开发环境下通过 eslint-loader 在每次保存时 lint 代码。这个值会在 @vue/cli-plugin-eslint 被安装之后生效
-  lintOnSave: process.env.NODE_ENV === "development",
+  // lintOnSave: process.env.NODE_ENV === "development",
+  lintOnSave: false,
   productionSourceMap: false,
   devServer: {
     port: 4455,
